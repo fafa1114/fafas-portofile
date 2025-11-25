@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fafa 的個人網站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        color: #111827;
+      }
+
+      header {
+        background: #111827;
+        color: #f9fafb;
+        padding: 16px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      header nav a {
+        color: #e5e7eb;
+        margin-left: 16px;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 24px auto;
+        padding: 0 16px 32px;
+      }
+
+      .hero {
+        background: #111827;
+        color: #f9fafb;
+        border-radius: 16px;
+        padding: 24px 20px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.35);
+      }
+
+      .hero-title {
+        font-size: 26px;
+        margin: 0 0 8px;
+      }
+
+      .hero-subtitle {
+        font-size: 16px;
+        margin: 0 0 12px;
+        color: #e5e7eb;
+      }
+
+      .hero-small {
+        font-size: 13px;
+        color: #9ca3af;
+        margin-bottom: 16px;
+      }
+
+      .hero-actions {
+        margin-top: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn-primary {
+        background: linear-gradient(to right, #2563eb, #4f46e5);
+        color: white;
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: #e5e7eb;
+        border: 1px solid #4b5563;
+      }
+
+      .section {
+        margin-top: 24px;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 16px 16px 4px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+        border: 1px solid #e5e7eb;
+      }
+
+      .section h2 {
+        font-size: 18px;
+        margin: 0 0 8px;
+      }
+
+      .section p {
+        font-size: 14px;
+        margin: 0 0 6px;
+        color: #374151;
+      }
+
+      .tag-row {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .tag {
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        border: 1px solid #d1d5db;
+        background: #f9fafb;
+        color: #4b5563;
+      }
+
+      .list {
+        margin: 4px 0 10px;
+        padding-left: 18px;
+        font-size: 14px;
+        color: #374151;
+      }
+
+      .list li {
+        margin-bottom: 4px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 16px;
+        font-size: 12px;
+        color: #9ca3af;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>我 的個人網站</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero 區塊 -->
+      <section class="hero">
+        <h1 class="hero-title">Hi, 我是 我 👋</h1>
+        <p class="hero-subtitle">
+          喜歡 AI、資料分析，也在練習把想法做成真的產品。<br />
+          這個網站是我的小實驗場：GitHub Pages + Supabase + Database Learning.
+        </p>
+        <p class="hero-small">
+          Side quest：順便學資料庫關聯 (一對多、多對多)、API、還有一點前端。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="projects.html">查看專案 Projects</a>
+          <a class="btn btn-secondary" href="about.html">關於我 About</a>
+        </div>
+      </section>
+
+      <!-- 目前在做什麼 -->
+      <section class="section">
+        <h2>目前在做什麼 🔧</h2>
+        <p>這個網站主要是用來：</p>
+        <ul class="list">
+          <li>練習 GitHub Pages 部署靜態網站</li>
+          <li>用 Supabase 建立雲端資料庫，從前端直接讀資料</li>
+          <li>實作簡單的 Portfolio / Blog / Database Demo</li>
+        </ul>
+        <p>也會慢慢加上：</p>
+        <ul class="list">
+          <li>Projects 來自資料庫的動態列表</li>
+          <li>之後可能有 Blog、留言板、或實驗紀錄</li>
+        </ul>
+      </section>
+
+      <!-- 技能 / 興趣 -->
+      <section class="section">
+        <h2>主修路線 & 興趣 💡</h2>
+        <p>目前主要在鑽研：</p>
+        <div class="tag-row">
+          <span class="tag">Deep Learning</span>
+          <span class="tag">Generative AI</span>
+          <span class="tag">Supabase / Database</span>
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">Embedded / IoT</span>
+        </div>
+        <p style="margin-top: 10px">
+          接下來會把一些 side project、比賽作品、課堂專案整理成 Project
+          卡片，集中放在這裡方便回顧，也當作作品集。
+        </p>
+      </section>
+
+      <!-- 想達成的目標 -->
+      <section class="section">
+        <h2>這個網站想達成什麼 🎯</h2>
+        <p>簡單說，就是三件事：</p>
+        <ul class="list">
+          <li>有一個可以直接丟連結給別人的個人頁面</li>
+          <li>透過實作理解「前端 ↔ 後端 ↔ 資料庫」整體流程</li>
+          <li>把未來找實習 / 工作會用到的東西慢慢整理好</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>© 2025 我 Lin. Powered by GitHub Pages + Supabase.</footer>
+  </body>
+</html>
 
