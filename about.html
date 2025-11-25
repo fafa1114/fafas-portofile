@@ -1,1 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <title>About | 我 的個人網站</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        color: #111827;
+      }
+
+      header {
+        background: #111827;
+        color: #f9fafb;
+        padding: 16px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 20px;
+      }
+
+      header nav a {
+        color: #e5e7eb;
+        margin-left: 16px;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      header nav a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 24px auto;
+        padding: 0 16px 32px;
+      }
+
+      h2 {
+        font-size: 22px;
+        margin-top: 0;
+      }
+
+      .section {
+        margin-top: 24px;
+        background: #ffffff;
+        border-radius: 12px;
+        padding: 16px 16px 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+        border: 1px solid #e5e7eb;
+      }
+
+      .section p {
+        font-size: 14px;
+        margin: 0 0 6px;
+        color: #374151;
+        line-height: 1.6;
+      }
+
+      .list {
+        margin: 4px 0 10px;
+        padding-left: 18px;
+        font-size: 14px;
+        color: #374151;
+      }
+
+      .list li {
+        margin-bottom: 4px;
+      }
+
+      .tag-row {
+        margin-top: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .tag {
+        font-size: 12px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        border: 1px solid #d1d5db;
+        background: #f9fafb;
+        color: #4b5563;
+      }
+
+      .timeline-item {
+        margin-bottom: 10px;
+        padding-left: 6px;
+        border-left: 2px solid #e5e7eb;
+      }
+
+      .timeline-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 2px;
+      }
+
+      .timeline-time {
+        font-size: 12px;
+        color: #9ca3af;
+        margin-bottom: 2px;
+      }
+
+      .timeline-desc {
+        font-size: 13px;
+        color: #4b5563;
+      }
+
+      a.link {
+        color: #2563eb;
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      a.link:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        text-align: center;
+        padding: 16px;
+        font-size: 12px;
+        color: #9ca3af;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>我 的個人網站</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>關於我 About Me 👩‍💻</h2>
+        <p><b>Hi，我是 我（林彧頎）。</b></p>
+        <p>
+          對 AI、Deep Learning、嵌入式系統、資料庫 / 系統整合有興趣，<br />
+          喜歡用 side project 的方式，把學到的東西做成可以 demo 的小工具或網站。
+        </p>
+        <p>
+          這個 About 頁面主要是當作簡單的自我介紹，如果之後要投實習 / 比賽 / 申請，
+          就可以直接把這個連結丟出去當作延伸閱讀 😆
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>關注領域 & 技能 🌱</h2>
+        <p>目前主要關注的領域：</p>
+        <div class="tag-row">
+          <span class="tag">Deepfake Audio Detection</span>
+          <span class="tag">Generative AI</span>
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Supabase / Database</span>
+          <span class="tag">Python</span>
+          <span class="tag">C++</span>
+          <span class="tag">Embedded / IoT</span>
+        </div>
+
+        <p style="margin-top: 10px">常用的技術 / 工具：</p>
+        <ul class="list">
+          <li>Python（資料處理、ML / DL、script、自動化）</li>
+          <li>C / C++（演算法練習、系統程式）</li>
+          <li>Git, GitHub（版本控制、GitHub Pages 部署網站）</li>
+          <li>Supabase（PostgreSQL、RLS、Policy、API 存取）</li>
+          <li>一點前端：HTML / CSS / JavaScript</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>學習路線 & 目標 🎯</h2>
+        <p>目前這個網站背後有幾個小目標：</p>
+        <ul class="list">
+          <li>把 GitHub Pages + Supabase 串起來，做出一個真的「全線上」的小系統</li>
+          <li>用實作方式學會資料庫的關聯（尤其是一對多、多對多）</li>
+          <li>把未來可能用到的 project / 比賽成果整理成「可閱讀的作品集」</li>
+        </ul>
+        <p>之後可能會陸續加入：</p>
+        <ul class="list">
+          <li>簡單的 Blog 或學習筆記頁面</li>
+          <li>留言板或回饋表單（練習 insert / update / delete）</li>
+          <li>更多和 AI / IoT / 系統整合有關的小作品</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>簡單時間軸 / 經歷 🕒</h2>
+        <div class="timeline-item">
+          <div class="timeline-time">202x → 現在</div>
+          <div class="timeline-title">就讀於國立陽明交通大學（假填，可自行修改）</div>
+          <div class="timeline-desc">
+            主修資工相關領域，修習 Deep Learning、Operating Systems、Embedded
+            Systems 等課程，並參與專題 / 研究 / 比賽。
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">202x</div>
+          <div class="timeline-title">開始接觸 Deep Learning / Generative AI</div>
+          <div class="timeline-desc">
+            將課堂作業與 side project 結合，嘗試做 Deepfake Audio
+            偵測、模型壓縮與部署等主題。
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">202x</div>
+          <div class="timeline-title">開始整理作品 & 線上化</div>
+          <div class="timeline-desc">
+            開始建立這個 GitHub Pages + Supabase 的網站，嘗試把過去的專案與未來的新作品
+            用比較有系統的方式整理起來。
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>聯絡方式 / 其他連結 📮</h2>
+        <p>如果之後有需要，也可以在這區放：</p>
+        <ul class="list">
+          <li>Email：<i>（之後要公開再自己加）</i></li>
+          <li>
+            GitHub：
+            <a class="link" href="https://github.com/你的帳號" target="_blank"
+              >github.com/你的帳號</a
+            >
+          </li>
+          <li>
+            Medium / Blog：
+            <i>（如果之後有寫再補上連結）</i>
+          </li>
+          <li>LinkedIn / 履歷網站：可以之後加上</li>
+        </ul>
+        <p style="font-size: 13px; color: #6b7280">
+          目前先當作自己用的簡單介紹頁，之後如果要正式對外，也可以再把內容寫得更正式一些。
+        </p>
+      </section>
+    </main>
+
+    <footer>© 2025 我 Lin. Powered by GitHub Pages + Supabase.</footer>
+  </body>
+</html>
 
